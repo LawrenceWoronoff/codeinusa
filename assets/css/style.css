@@ -665,7 +665,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
-  background: url("../img/testimonials-bg.jpg") no-repeat;
+  background: url("../img/testimonials-bg.jfif") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -1178,4 +1178,127 @@ section {
 }
 #footer .credits {
   font-size: 13px;
+}
+
+/*******************************/
+/*********** Team CSS **********/
+/*******************************/
+.team {
+  position: relative;
+  width: 100%;
+  padding: 45px 0 15px 0;
+}
+
+.team .team-item {
+  position: relative;
+  background: #ffffff;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: inset 0 0 0 0 transparent;
+  /* transition: ease-out 0.5s; */
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.team .team-img {
+  position: relative;
+  width: 50%;
+  overflow: hidden;
+}
+
+.team .team-img img {
+  position: relative;
+  width: 100%;
+  transition: .5s;
+}
+
+.team .team-text {
+  position: relative;
+  width: 50%;
+  padding: 0 30px;
+}
+
+.team .team-text h2 {
+  color: #3342f5;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  transition: 1s;
+}
+
+.team .team-text h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  transition: 1s;
+}
+
+.team .team-text p {
+  margin-bottom: 20px;
+  transition: 1s;
+}
+
+.team .team-social {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.team .team-social a.btn {
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: normal;
+  margin-right: 5px;
+}
+
+.team .team-item:hover {
+  box-shadow: inset 800px 0 0 0 #888888;
+  opacity: 0.8;
+}
+
+.team .team-item:hover .team-img img {
+  transform: scale(1.2);
+}
+
+.team .team-item:hover .team-text h2,
+.team .team-item:hover .team-text h4,
+.team .team-item:hover .team-text p {
+  color: #ffffff;
+}
+
+.team .team-item:hover .team-social a.btn {
+  background: #ffffff;
+}
+
+.team .team-item:hover .team-social a.btn:hover {
+  border-color: #ffffff;
+}
+
+@media(max-width: 575.98px) {
+  .team .team-text {
+      padding: 0 15px;
+  }
+  
+  .team .team-text h2 {
+      font-size: 16px;
+      margin-bottom: 0;
+  }
+
+  .team .team-text h4 {
+      margin-bottom: 5px;
+  }
+
+  .team .team-text p {
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 10px;
+  }
 }
